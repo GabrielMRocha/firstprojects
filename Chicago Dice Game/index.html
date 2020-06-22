@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <title>Chicago Dice Game</title>
+    </head>
+
+    <body>
+        <button class="rule-btn">Rules</button>
+
+        <div class="modal" id='mod'>
+            <div class="modal-content" >
+                <span class="close">&times;</span>
+                <p>The Chicago Dice Game is played in 11 rounds, starting with throw 2, then going to throw 3 and continuing until throw 12.</p>
+                <p>In each throw each player takes his or her turn and rolls two dice, trying to roll the number of that throw.</p> For example, in the throw with number 2, you aim to roll a 1 on each dice giving you a total of 2.
+                <p>Every player that rolls the number of the current throw gets a point and adds it to his overall score.</p> After all 11 throws are finished the round ends and the player with the higher number of points is declared the winner.
+            </div>
+
+        </div>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="OV-score">Wins: <p id="OV-0">0</p></div>
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+
+            <div class="player-1-panel">
+                <div class="OV-score">Wins:<p id="OV-1">0</p></div>
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-new_round"><i class="ion-ios-plus-outline"></i>New round</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll the dice</button>
+            <div class="number_roll"></i>Throw 2</div>
+
+            <img src="dice-5.png" alt="Dice" class="dice">
+            <div class="result"></i></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
