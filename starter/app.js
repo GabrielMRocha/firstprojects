@@ -44,7 +44,7 @@ function changePlayer(){
     document.querySelector('.number_roll').textContent = 'Throw '+tHrow;
     nRolls = 0;
     roundScore=0
-    document.querySelector('.result').textContent = 'NOPE!'
+
 
 
 }
@@ -83,10 +83,10 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
             document.querySelector('.result').textContent = 'Roll once more'
             } else if (roundScore == tHrow) {
-            document.querySelector('#score-' + activePlayer).textContent++
+            scores[activePlayer] += tHrow;
+            document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
             document.querySelector('#current-' + activePlayer).textContent = 0;
-            scores[activePlayer] += 1;
-            tHrow +=1;
+
             nRolls = 0;
             activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
             document.querySelector('.number_roll').textContent = 'Throw '+tHrow;
@@ -96,10 +96,12 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             changePlayer()
             } else {
                 //next player
+                document.querySelector('.result').textContent = 'NOPE!'
                 changePlayer()
             }
         } else {
             //Next Player
+            document.querySelector('.result').textContent = 'NOPE!'
             changePlayer()
         }
 
@@ -125,6 +127,3 @@ document.querySelector('.btn-new').addEventListener('click', function() {
     players();
 
 })
-
-
-//document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + </em>;
