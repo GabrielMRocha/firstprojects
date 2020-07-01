@@ -1,0 +1,11 @@
+Project made to learn how to operate with PostGRESQL databases and website deployment with Python, HTML and CSS
+
+Basic concept:
+
+1- user inputs their email and height data
+2- the data gets stored into a PostGRESQL database
+3- the user receives an email with his info and with the average height of all data stored in the database.
+
+Next steps:
+- Add complexity to the overall idea of the app
+- Total re-do of the layout, using JavaScript this time
