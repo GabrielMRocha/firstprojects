@@ -1,0 +1,5 @@
+Challenge made by a friend, to make a multi-lingual swearing dicitonary.
+
+database for the dictionary collected via webscrapping wiki pages for swear words. app made using python and kivy.
+
+deployment for mobile missing, needs to be done in linux
